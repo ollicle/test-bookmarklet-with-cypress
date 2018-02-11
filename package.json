@@ -1,0 +1,16 @@
+{
+  "name": "test-bookmarklet-with-cypress",
+  "version": "1.0.0",
+  "description": "Demonstrate a problem with generating iframes with Cypress",
+  "main": "bookmarklet.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "serve": "serve -p 3333 ./"
+  },
+  "author": "Oliver Boermans",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^1.4.2",
+    "serve": "^6.4.9"
+  }
+}
