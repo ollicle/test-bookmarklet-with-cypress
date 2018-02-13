@@ -38,7 +38,7 @@ Where **Hello Cypress*** is the title of the test page.
 	Expected document title: Hello Cypress
 	Actual document title: test-bookmarklet-with-cypress
 
-Where **test-bookmarklet-with-cypress*** is the title of the Cypress Test Runner page.
+Where **test-bookmarklet-with-cypress** is the title of the Cypress Test Runner page.
 
 ## Help?
 
