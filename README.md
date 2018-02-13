@@ -20,21 +20,26 @@ Once the Cypress Test Runner has launched run the *bookmarklet.js* test
 
 ## What happens
 
-1. The test page `./index.html` is loaded via <http://localhost:3333/> into the Cypress Test Runner iframe.
+1. The test page `./index.html` is loaded via <http://localhost:3000> into the Cypress Test Runner iframe.
 2. The Cypress test `./cypress/integration/inject-bookmarklet.js` then injects `./bookmarklet.js` into the loaded test page.
+3. The bookmarklet script executes some logging of `document.title`
 
-## Expected
+## Expected logging
 
-The bookmarklet script replaces the content of the loaded _test_ page body with an iframe loading `./index.html?`
+(In console of Cypress launched Chrome)
 
-*Hello Cypress* is visible within an iframe appended to the test page.
+	Expected document title: Hello Cypress
+	Actual document title: Hello Cypress
 
-## Actual
+Where **Hello Cypress*** is the title of the test page.
 
-Seems the bookmarklet script is injected into the wrong document (not within the test page). Replacing the whole Cypress Test Runner UI.
+## Actual logging
+
+	Expected document title: Hello Cypress
+	Actual document title: test-bookmarklet-with-cypress
+
+Where **test-bookmarklet-with-cypress*** is the title of the Cypress Test Runner page.
 
 ## Help?
 
-How does one modify the DOM of the test page?
-
-Specifically, to execute an external script in its document context.
+Is there something I can do to execute an external script in the test document context?
