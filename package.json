@@ -5,7 +5,7 @@
   "main": "bookmarklet.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "serve": "serve -p 3333 ./"
+    "serve": "serve -p 3000 ./"
   },
   "author": "Oliver Boermans",
   "license": "ISC",
