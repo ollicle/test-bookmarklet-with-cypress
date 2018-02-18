@@ -4,12 +4,14 @@
   "description": "Demonstrate a problem with generating iframes with Cypress",
   "main": "bookmarklet.js",
   "scripts": {
-    "cypress:open": "cypress open",
-    "serve": "serve -p 3000 ./"
+    "serve": "serve -p 3000 ./test",
+    "proxy": "node proxy.js",
+    "cypress:open": "cypress open"
   },
   "author": "Oliver Boermans",
   "license": "ISC",
   "dependencies": {
+    "browser-sync": "^2.23.6",
     "cypress": "^1.4.2",
     "serve": "^6.4.9"
   }
