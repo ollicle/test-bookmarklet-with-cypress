@@ -12,7 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.23.6",
-    "cypress": "^1.4.2",
+    "cypress": "^2.0.1",
     "serve": "^6.4.9"
   }
 }
