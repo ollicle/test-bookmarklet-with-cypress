@@ -4,7 +4,7 @@
   "description": "Demonstrate a problem with generating iframes with Cypress",
   "main": "bookmarklet.js",
   "scripts": {
-    "serve": "serve -p 3000 ./test",
+    "serve": "browser-sync start --server 'test' --port 3000 --ui-port 4000 --no-open",
     "proxy": "node proxy.js",
     "cypress:open": "cypress open"
   },
@@ -12,7 +12,6 @@
   "license": "ISC",
   "dependencies": {
     "browser-sync": "^2.23.6",
-    "cypress": "^2.0.1",
-    "serve": "^6.4.9"
+    "cypress": "^2.0.1"
   }
 }
